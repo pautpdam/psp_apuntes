@@ -1,0 +1,31 @@
+La estructura
+public class classe
+{
+    public void metedoNoSincronitzat
+    {
+        parte del codigo NO sincronizado
+
+        synchronized(this)      // si deseamos bloquear el objeto que invoca el metodo
+        {
+            codigo sincronizado
+        }
+
+        parte NO sincronizado
+    }
+
+    public void metedoNoSincronitzat
+    {
+        parte del codigo NO sincronizado
+
+        synchronized(altreObjecte)      // codigo sincronizado
+        {
+            codigo sincronizado
+        }
+
+        parte NO sincronizado
+    }
+}
+
+Es una solucion que normalmente se usa cuando queremos realizar
+mas de una operación atómica.
+Operación atómica es que se ejecute totalmente o no

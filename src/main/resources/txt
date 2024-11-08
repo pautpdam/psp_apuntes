@@ -1,0 +1,10 @@
+Exclusión mútua.
+Parte del codigo que accede a recursos compartidos
+y requiere control para evitar accesos concurrentes
+
+Condiciones de carrera
+
+Una condicion de carrera surge cuando multiples hilos acceden
+y modifican datos compartidos simultaneamente
+
+Sección crítica es un bloque de codigo que accede a recursos compartidos
